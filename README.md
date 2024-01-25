@@ -36,7 +36,7 @@ Abra o navegador e vá para: [http://localhost:4200/](http://localhost:4200/)
 
 #### Editando uma Atividade
 
-- O usuário pode editar uma atividade clicando no botão "Editar Cadastro" na tabela.
+- O usuário pode editar uma atividade clicando no botão "Editar" na tabela.
 - Isso o levará a uma página de edição onde ele pode modificar o título, descrição ou data da atividade.
 - Após a confirmação, as alterações serão refletidas na lista de atividades do usuário.
 
@@ -48,15 +48,7 @@ Abra o navegador e vá para: [http://localhost:4200/](http://localhost:4200/)
 
 ### Mudando o Cadastro do Usuário
 
-- O usuário pode alterar seu cadastro clicando no botão "Alterar Cadastro".
-- Isso o levará a uma página onde ele pode modificar suas informações, como nome, senha, etc.
+- O usuário pode alterar seu cadastro clicando no botão "Editar Cadastro".
+- Isso o levará a uma página onde ele pode modificar suas informações, como nome, email e senha.
 - Após a confirmação, as alterações no cadastro serão aplicadas.
-
-## Contribuição
-
-Se você quiser contribuir, sinta-se à vontade para abrir problemas ou enviar pull requests. Certifique-se de seguir as diretrizes de contribuição do projeto.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT.
 
