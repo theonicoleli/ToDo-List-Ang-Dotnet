@@ -20,3 +20,29 @@ Certifique-se de ter os seguintes pré-requisitos instalados antes de iniciar:
 "ConnectionStrings": {
   "DefaultConnection": "Server=<nome-do-servidor>;Database=TodoListDb;Trusted_Connection=True;"
 }
+```
+
+Instruções de Utilização
+Abra o navegador e vá para: http://localhost:4200/
+Interagindo com as Atividades
+Adicionando uma Atividade
+Cada usuário pode adicionar uma nova atividade clicando no botão "Add New Do".
+Isso abrirá uma página onde o usuário pode inserir o título, descrição e data da nova atividade.
+Ao confirmar, a atividade será adicionada à lista do usuário.
+Editando uma Atividade
+O usuário pode editar uma atividade clicando no botão "Editar Cadastro" na tabela.
+Isso o levará a uma página de edição onde ele pode modificar o título, descrição ou data da atividade.
+Após a confirmação, as alterações serão refletidas na lista de atividades do usuário.
+Excluindo uma Atividade
+Cada atividade possui botões de edição e exclusão na tabela.
+Ao clicar no botão de exclusão, o usuário será solicitado a confirmar a exclusão.
+Após a confirmação, a atividade será removida da lista do usuário.
+Mudando o Cadastro do Usuário
+O usuário pode alterar seu cadastro clicando no botão "Alterar Cadastro".
+Isso o levará a uma página onde ele pode modificar suas informações, como nome, senha, etc.
+Após a confirmação, as alterações no cadastro serão aplicadas.
+Contribuição
+Se você quiser contribuir, sinta-se à vontade para abrir problemas ou enviar pull requests. Certifique-se de seguir as diretrizes de contribuição do projeto.
+
+Licença
+Este projeto está licenciado sob a Licença MIT.
