@@ -22,6 +22,28 @@ Certifique-se de ter os seguintes pré-requisitos instalados antes de iniciar:
 }
 ```
 
+### Executando o Projeto
+
+Antes de executar a aplicação, certifique-se de que o backend e o frontend estão configurados corretamente.
+
+#### Frontend (Angular)
+
+No terminal, navegue até o diretório do projeto Angular e execute o seguinte comando:
+
+```bash
+ng serve
+```
+
+Isso iniciará o servidor de desenvolvimento do Angular. Abra o navegador e vá para: http://localhost:4200/
+
+#### Backend (.NET)
+
+Abra o projeto TodoListApi no Visual Studio e, em seguida, execute o seguinte comando no terminal:
+
+```bash
+dotnet run
+```
+
 ## Instruções de Utilização
 
 Abra o navegador e vá para: [http://localhost:4200/](http://localhost:4200/)
