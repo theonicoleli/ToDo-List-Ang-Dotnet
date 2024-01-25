@@ -1,0 +1,16 @@
+button {
+    border: none;
+    height: 40px;
+    width: 70px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}

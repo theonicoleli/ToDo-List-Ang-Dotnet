@@ -1,0 +1,61 @@
+<div class="main">
+    <h1>To-Do List</h1>
+    <div class="do-table">
+        <h1>Hello, {{ currentPerson?.name }}</h1>
+        <button>
+            <a routerLink="/add">
+                Add New Do
+            </a>
+        </button>
+        <button (click)="currentPersonChanging()">
+            <a routerLink="/login">
+                Sair
+            </a>
+        </button>
+        <button [routerLink]="
+        ['/edit-perfil', currentPerson?.personId]
+        ">
+            <a>
+                Alterar Cadastro
+            </a>
+        </button>        
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of currentPerson?.dos">
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.description }}</td>
+                    <td>{{ item.date | date:'dd/MM/yyyy' }}</td>
+                    <td>
+                        <app-edit-delete 
+                            [color]="editPersonColor" 
+                            [text]="editPerson"
+                            [execDelete]="execDeleteFalse"
+                            [doItem]="item.doId"
+                            >
+                        </app-edit-delete>
+                    </td>
+                    <td>
+                        <app-edit-delete 
+                            [color]="deletePersonColor" 
+                            [text]="deletePerson" 
+                            (deleteClick)="onDeleteDo(item.doId)"
+                            [execDelete]="execDeleteTrue"
+                            [routerLink]="'/menu'">
+                        </app-edit-delete>      
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

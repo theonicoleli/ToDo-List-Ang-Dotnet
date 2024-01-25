@@ -1,0 +1,7 @@
+<button [style.background-color]="color" (click)="execDelete ? onDeleteClick() : onEditClick()">
+    <a>
+        {{text}}
+    </a>
+</button>
+
+<router-outlet></router-outlet>

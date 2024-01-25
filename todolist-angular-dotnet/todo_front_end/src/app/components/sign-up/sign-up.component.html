@@ -1,0 +1,18 @@
+<form (submit)="submitForm()" method="post">
+    <h1>Sign Up</h1>
+
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Name" [(ngModel)]="name">
+
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" placeholder="User" [(ngModel)]="email">
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="password">
+
+    <button type="submit">Submit</button>
+    <p>
+        Já possui login?
+        <a href="">Clique aqui</a>
+    </p>
+</form>

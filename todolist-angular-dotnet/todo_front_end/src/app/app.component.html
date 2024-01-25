@@ -1,0 +1,21 @@
+<body>
+  <ng-container *ngIf="showLoginForm && 
+  (currentRoute === '/' || currentRoute === '/login' || currentRoute === ''); else signUpForm">
+    <form (submit)="submitForm()" method="post">
+      <h1>Login</h1>
+      <label for="user">Email</label>
+      <input type="text" name="user" id="user" placeholder="User" [(ngModel)]="email">
+      
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="password">
+      
+      <button type="submit">Submit</button>
+      <p> Não tem uma conta ainda?
+        <a routerLink="/signup">Cadastrar</a>
+      </p>
+    </form>
+  </ng-container>
+  <ng-template #signUpForm>
+    <router-outlet></router-outlet>
+  </ng-template>
+</body>
